@@ -2,7 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
+#makeCacheMatrix takes a matrix as input and exposes a getter and setter for the original matrix as well as the inverse.
 
+#after passing in a matrix, you are able to call getInverse
 makeCacheMatrix <- function(x = matrix()) {
   inverseMatrix <- NULL
   
@@ -19,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+#cacheSolve will return an inverse matrix that has been cached in makeCacheMatrix or caculate the inverse of the matrix and return it.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inverseMatrix <- x$getInverse()
